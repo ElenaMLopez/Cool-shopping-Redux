@@ -86,6 +86,38 @@
   margin: 0 auto;
   width: 110px;
 }
+
+/* Product detail view */
+.product-detail_container {
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 600px;
+}
+.product-detail__back-link {
+  border-radius: 5px;
+  border: 1px solid #666;
+  color: #000;
+  display: inline;
+  padding: 5px;
+  text-decoration: none;
+}
+.product-detail__info-container {
+  padding: 20px 5px;
+  text-align: center;
+}
+.product-detail__title{
+  color: #000;
+  margin: 0 auto;
+  display: block;
+}
+.product-detail__image {
+  max-width: 400px;
+}
+.product-detail__description {
+  text-align: justify;
+}
+
 /* Loader */
 .loader-container {
   align-items: center;
