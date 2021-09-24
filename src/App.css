@@ -19,7 +19,7 @@
 
 
 /*  Components */
-
+/* Header */
 .main-header {
   height:100px;
   position: relative;
@@ -38,3 +38,110 @@
   width: 100%;
 }
 
+/* Product List */
+
+.product-list__title {
+  margin-left: 20px;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.products-list a {
+  text-decoration: none;
+  color: #000;
+}
+.product-list_element {
+  border-radius: 5px;
+  border: 1px solid #acacac;
+  list-style: none;
+  margin: 10px;
+  padding: 20px;
+  width: 230px;
+}
+
+/* Product card */
+.product-card {
+  border: none;
+  background: #fff;
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+}
+.product-name {
+  display: block;
+}
+
+.product-image {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+}
+/* Loader */
+.loader-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  width: 100%;
+}
+.heart-container {
+  animation-name: heart;
+  border-radius: 30%;
+  height: 200px;
+  width: 200px;
+}
+.right-half-heart {
+  animation-name: heart;
+  background: white;
+  border-radius: 100% 100% 0 0;
+  height: 150px;
+  position: relative;
+  right: -69px;
+  top: -128px;
+  transform: rotate(45deg);
+  width: 100px;
+}
+.left-half-heart{
+  animation-name: heart;
+  background: white;
+  border-radius: 30% 1% 100% 100%;
+  height: 150px;
+  left: 31px;
+  position: relative;
+  top: 20px;
+  transform: rotate(131deg);
+  width: 100px;
+}
+@keyframes heart {
+  0% {
+    background-color: #bb0000;
+    transform: scale(.05);
+  }
+  50% {
+    background-color: #ff6f00;
+  }
+  100% {
+    background-color: #fffcdd;
+    transform: scale(.75);
+  }
+}
+.heart {
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-duration: 1.5s; 
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-play-state: running; 
+  animation-timing-function: cubic-bezier(1, 0, 0.6, 1); 
+}

@@ -3,7 +3,6 @@ import thunk from 'redux-thunk';
 import productReducer from './products/productReducer';
 
 
-// Combine ducks 
 const rootReducer = combineReducers({
   products: productReducer,
 });
