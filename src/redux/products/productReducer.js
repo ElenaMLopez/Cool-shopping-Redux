@@ -10,5 +10,7 @@ export default function productReducer (state = initialData, action) {
         ...state,
         products: action.payload,
       }
+    default: 
+    return state;
   }
 }
