@@ -20,6 +20,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Using Docker:
+Just run the following command to run the app in a docker container. With this way you don't need to install node or anything else into your computer, you only need to have docker installed:
+
+#### `docker compose up`
+
+## If you have node already:
+
 ### `yarn start`
 
 Runs the app in the development mode.
