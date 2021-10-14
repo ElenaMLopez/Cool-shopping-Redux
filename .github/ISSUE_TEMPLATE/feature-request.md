@@ -2,7 +2,7 @@
 
 ### As a user 😄 :
 
-- [x]  I want ...
+- [ ]  I want ...
 
 ### As a developer 💻 :
 - I want a test on each component, looking for its correct visualization and correct flow.
